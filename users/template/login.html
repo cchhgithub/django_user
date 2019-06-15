@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form name="Form1" action="/login/" method="post">
+        username:<input type="text" name="username"><br>
+        password:<input type="password" name="password"><br>
+        <a href="javascript:document.Form1.submit();">登录</a>
+        <a href="/register/">注册</a>
+        {% csrf_token %}
+    </form>
+</body>
+</html>
