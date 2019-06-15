@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+    <ul>
+        {% for item in UserInfo %}
+            <li>
+                <span>{{ item.name }}</span>
+                <span>{{ item.age }}</span>
+                <span>{{ item.addr }}</span>
+                <span>{{ item.sex }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

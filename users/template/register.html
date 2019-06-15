@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style type="text/css">
+        .s
+        {
+            display: block;
+            float: left;
+            width: 150px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register/" method="post" name="form2">
+        <span class="s">username:</span><input type="text" name="username"><br>
+        <span class="s">password:</span><input type="password" name="password"><br>
+        <span class="s">confirmPassword:</span><input type="password" name="confirmPwd"><br>
+        <br><br>
+        <span class="s">age:</span><input type="text" name="age"><br>
+        <span class="s">address:</span><input type="text" name="address"><br>
+        <span class="s">sex:</span><input type="radio" name="sex" value="male">男
+        <input type="radio" name="sex" value="female">女<br>
+        <input type="submit" name="提交" value="注册">
+        {% csrf_token %}
+    </form>
+</body>
+</html>
