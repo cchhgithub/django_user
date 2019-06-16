@@ -15,6 +15,7 @@ def login(request):
         username = request.POST.get('username',None)
         password = request.POST.get('password',None)
         if check_passwd(username,password):
+            global loginFlag
             loginFlag = True
             return redirect(show)
         else:
